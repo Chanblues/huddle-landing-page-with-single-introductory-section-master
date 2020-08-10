@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(257, 40%, 49%) url('./images/bg-desktop.svg') no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 60px 0 60px 0;
+}
+
+#logo img {
+    width: 15%;
+    margin-left: 6.25rem;
+}
+
+#grid {
+    margin: 1.125rem 6.25rem;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#grid img{
+    width: 100%;
+}
+
+#content {
+    margin-top: 2.5rem;
+}
+
+#content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    line-height: 3.125rem;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+#content p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: thistle;
+    margin-bottom: 1.5rem;
+    line-height: 1.56rem;
+}
+
+#content button {
+    font-size: 1rem;
+    width: 11.25rem;
+    height: 3.125rem;
+    border: none;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    font-weight: 700;
+}
+
+#social_icon {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6.25rem;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+#social_icon div:not(:last-child) {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 1198px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+
+   #logo {
+        padding: 30px 0 30px 0;
+   }
+   
+   #logo img {
+        width: 150px;
+        margin-left: 50px;
+    }
+   
+    #grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        margin: 18px 50px;
+    }
+
+    #content {
+        text-align: center;   
+    }
+
+    #content h1 {
+        font-size: 1.5rem;
+        font-weight: 2px;
+        letter-spacing: 0;
+        line-height: 2.5rem;
+        color: white;
+        margin-bottom: 7px;
+    }
+
+    #content p {
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        margin-bottom: 1.5rem;
+        line-height: 1.56rem;
+    }
+
+    #content button {
+        font-size: 0.7rem;
+        width: 11.25rem;
+        height: 2.4rem;
+        font-weight: 400;
+    }
+
+    #social_icon {
+        justify-content: center;
+        margin-right: 0;
+    }
+} 
